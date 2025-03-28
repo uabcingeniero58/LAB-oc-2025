@@ -21,6 +21,7 @@ section .text
 ;b.- Coloque los 16 bits menos	significativos de EBX en la	pila.
 
  push bx
+ call puts
 
 ;c.-Defina	una	variable	N	de	2	bytes	de	longitud.	En	ella,	guarde	el	resultado	de	la	
 multiplicación	de	BL	por	8,	sin	considerar	los	signos
@@ -29,10 +30,11 @@ multiplicación	de	BL	por	8,	sin	considerar	los	signos
  mov cl, 8
  mul cl               ; Resultado en AX
  mov [N], ax
+ call puts
 
 ;d.- incrementar el valor 1 en N
  inc word [N]
-
+ call puts
 
 ;e.- Divida	el	valor	almacenado	en	BX	entre	0xFF.	Imprima	tanto	el	cociente	como	el	residuo	
 de	la	operación.
@@ -49,6 +51,7 @@ están	activas.
  movzx ax, byte [residuo]
  add [N], ax
  dec word [N]
+ call puts
     
 ; obtener las EFLAGS y imprimirlas
  pushf                ; enpuja las banderas al stack
