@@ -1,11 +1,11 @@
 %include "pc_iox.inc"
 
 section. data
-    N dw 0       
-    cociente db 0
-    residuo db 0
-    flag_str db "EFLAGS: ", 0
-    newline db 10, 0
+ N dw 0       
+ cociente db 0
+ residuo db 0
+ flag_str db "EFLAGS: ", 0
+ newline db 10, 0
 
 section. bss
 
