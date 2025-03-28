@@ -20,7 +20,6 @@ section .text
  call pHex_dw
 
 ;b.- Coloque los 16 bits menos	significativos de EBX en la	pila.
-
  push bx
  call puts
 
