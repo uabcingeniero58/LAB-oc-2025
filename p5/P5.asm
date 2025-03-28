@@ -46,17 +46,18 @@ Guarde	el	valor	en	N	y	decremente	N.	Realice	las	operaciones	necesarias	para	imp
 el	registro	de	banderas	y	explique	qué	banderas	están	activas	y	la	razón	del	porqué	
 están	activas.
 
-    movzx ax, byte [residuo]
-    add [N], ax
-    dec word [N]
+ movzx ax, byte [residuo]
+ add [N], ax
+ dec word [N]
     
-    ; obtener las EFLAGS y imprimirlas
-    pushf                ; enpuja las banderas tal stack
-    pop eax              ; Pop las banderas en EAX
-    call puts
+; obtener las EFLAGS y imprimirlas
+ pushf                ; enpuja las banderas al stack
+ pop eax              ; Pop las banderas en EAX
+ call puts
 
-;g.- Saque undato de	16 bits	de la pila.	
+;g.- Saque undato de 16 bits de la pila.	
  pop bx
+ call puts
     
 ;salir
     mov eax, 1
