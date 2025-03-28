@@ -38,7 +38,8 @@ multiplicación	de	BL	por	8,	sin	considerar	los	signos
 de	la	operación.
  mov ax, bx           ; Mover BX a AX ´para division
  mov cl, 0xFF
- div cl    
+ div cl 
+ call puts   
 
 ;f.- Realice	la	suma	entre	el	valor	almacenado	en	N	y	el	residuo	de	la	división	anterior.	
 Guarde	el	valor	en	N	y	decremente	N.	Realice	las	operaciones	necesarias	para	imprimir	
