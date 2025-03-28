@@ -15,8 +15,8 @@ section .text
   _start:
 
 ;a.- Coloque en EBX el valor 0x5C4B2A60. Sume	su matrícula como valor hexadecimal
-    mov ebx, 0x5C4B2A60
-    add ebx, 0x2203421
+ mov ebx, 0x5C4B2A60
+ add ebx, 0x2203421
 
 ;b.- Coloque los 16 bits menos	significativos de EBX en la	pila.
 
